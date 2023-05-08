@@ -1,8 +1,30 @@
 import { Link } from "react-router-dom";
 
 export default function Menu() {
+    function openMenu() {
+        const sideMenu = document.getElementsByClassName("menu")[0];
+        sideMenu.style.width = '230px';
+        const content = document.getElementsByClassName("content")[0];
+        content.style.opacity = '0.5';
+        const top = document.getElementsByClassName("top-menu")[0];
+        top.style.opacity = '0.5';
+        content.addEventListener("click", function () {
+            top.style.opacity = '1';
+            content.style.opacity = '1';
+            sideMenu.style.width = '0px';
+        });
+        top.addEventListener("click", function () {
+            top.style.opacity = '1';
+            content.style.opacity = '1';
+            sideMenu.style.width = '0px';
+        });
+    }
     return (
         <>
+            <div className="top-menu">
+                <img src="menu.png" height={20} width={20} onClick={openMenu}></img>
+                <p>PS documentation</p>
+            </div>
             <div className="menu">
                 <div className="menu-items">
                     <p id="menu-title">PS documentation <br></br> v1.0.0</p>

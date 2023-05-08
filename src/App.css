@@ -4,38 +4,104 @@ html {
   background-color: #131416;
 }
 
-.menu {
-  background-color: #1A1C1E;
-  height: 100%;
-  position: fixed;
-  color: white;
-  width: 20%;
-  top: 0;
-  left: 0;
-  overflow-y: scroll;
+
+@media (min-width: 10px) {
+  .menu {
+    background-color: #1A1C1E;
+    height: 100%;
+    position: fixed;
+    color: white;
+    width: 0%;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    z-index: 9999;
+  }
+
+  .content {
+    position: absolute;
+    color: white;
+    left: 10%;
+    top: 10%;
+    overflow: auto;
+  }
+
+  /* Mobile top */
+  .top-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 9999;
+    background-color: #1A1C1E;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: center;
+    /* Optional, to center the content vertically */
+  }
+
+  .top-menu p {
+    color: white;
+    text-align: center;
+  }
+
+  .top-menu img {
+    margin-left: 10px;
+    justify-self: start;
+    filter: brightness(200%) invert(100%) grayscale(100%);
+  }
+
+  .top-menu img:hover {
+    cursor: pointer;
+  }
 }
 
-.content {
-  background-color: #131416;
-  color: white;
-  position: absolute;
-  left: 20%;
-  height: 100%;
-  width: 80%;
-  overflow-y: scroll;
-  top: 0;
-  padding: 3%;
-  max-width: 74%;
+
+@media (min-width: 1000px) {
+  .menu {
+    background-color: #1A1C1E;
+    height: 100%;
+    position: fixed;
+    color: white;
+    width: 20%;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+  }
+
+  .content {
+    background-color: #131416;
+    color: white;
+    position: absolute;
+    left: 20%;
+    height: 100%;
+    width: 80%;
+    overflow-y: scroll;
+    top: 0;
+    padding: 3%;
+    max-width: 74%;
+  }
+
+  #vl {
+    position: fixed;
+    left: 20%;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    background-color: #303335;
+  }
+
+  /* Mobile top */
+  .top-menu {
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+  }
 }
 
-#vl {
-  position: fixed;
-  left: 20%;
-  height: 100%;
-  width: 1px;
-  top: 0;
-  background-color: #303335;
-}
+
 
 /* Menu */
 .menu-items {
