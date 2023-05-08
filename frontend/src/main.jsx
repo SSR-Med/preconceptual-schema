@@ -13,10 +13,13 @@ import Change from './elements/Change.jsx';
 import Implication from './elements/Implication.jsx';
 import Additional from './Additional.jsx';
 import Frame from './elements/Frame.jsx';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-const router = createHashRouter({
-  routes: [
+const router = createBrowserRouter(
+  [
     {
       path: "/",
       element: <App />,
@@ -66,8 +69,9 @@ const router = createHashRouter({
       path: "/frame",
       element: <Frame />,
     },
-  ]
-});
+  ],
+  { basename: "/preconceptual-schema/" }
+);
 
 ReactDOM.render(
   <React.StrictMode>
