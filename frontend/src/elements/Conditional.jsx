@@ -10,7 +10,7 @@ export default function Conditional() {
                         triggers, initiating dynamic relationships.
                     </p>
                     <p>Example:</p>
-                    <img src="con.png" width={550}></img>
+                    <img src="conditional.png" width={550}></img>
                 </div>
             </div>
             <div id="vl">
