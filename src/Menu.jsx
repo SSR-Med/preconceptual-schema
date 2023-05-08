@@ -11,12 +11,31 @@ export default function Menu() {
         content.addEventListener("click", function () {
             top.style.opacity = '1';
             content.style.opacity = '1';
-            sideMenu.style.width = '0px';
+            if (window.innerWidth >= 1000) {
+                sideMenu.style.width = '20%';
+            }
+            else {
+                sideMenu.style.width = '0px';
+            }
         });
         top.addEventListener("click", function () {
             top.style.opacity = '1';
             content.style.opacity = '1';
-            sideMenu.style.width = '0px';
+            if (window.innerWidth >= 1000) {
+                sideMenu.style.width = '20%';
+            }
+            else {
+                sideMenu.style.width = '0px';
+            }
+
+        });
+        window.addEventListener("resize", function () {
+            if (window.innerWidth >= 1000) {
+                sideMenu.style.width = '20%';
+            }
+            else {
+                sideMenu.style.width = '0px';
+            }
         });
     }
     return (
