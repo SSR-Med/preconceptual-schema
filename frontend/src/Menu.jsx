@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Menu() {
     return (
         <>
@@ -6,21 +8,21 @@ export default function Menu() {
                     <p id="menu-title">PS documentation <br></br> v1.0.0</p>
                     <input type="text" id="input-menu" placeholder='Search'></input>
                     <ul id="principal-elements">
-                        <li><a href="\">Introduction</a></li>
+                        <li><Link to="/">Introduction</Link></li>
                         <li><a>Basic elements</a></li>
                         <ul id="secondary-elements">
-                            <li><a href="/concept">Concept</a></li>
-                            <li><a href="/relationship">Relationship</a></li>
-                            <li><a href="/note">Note</a></li>
-                            <li><a href="/negation">Negation</a></li>
-                            <li><a href="/event">Event</a></li>
-                            <li><a href="/conditional">Conditional</a></li>
-                            <li><a href="/reference">Reference</a></li>
-                            <li><a href="/implication">Connection</a></li>
-                            <li><a href="/frame">Frame</a></li>
+                            <li><Link to="/concept">Concept</Link></li>
+                            <li><Link to="/relationship">Relationship</Link></li>
+                            <li><Link to="/note">Note</Link></li>
+                            <li><Link to="/negation">Negation</Link></li>
+                            <li><Link to="/event">Event</Link></li>
+                            <li><Link to="/conditional">Conditional</Link></li>
+                            <li><Link to="/reference">Reference</Link></li>
+                            <li><Link to="/implication">Connection</Link></li>
+                            <li><Link to="/frame">Frame</Link></li>
                         </ul>
-                        <li><a href="/change">Changelog</a></li>
-                        <li><a href="/additional">Extra</a></li>
+                        <li><Link to="/change">Changelog</Link></li>
+                        <li><Link to="/additional">Extra</Link></li>
                     </ul>
                 </div>
 
