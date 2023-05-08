@@ -68,6 +68,7 @@ const router = createBrowserRouter([
     path: "/frame",
     element: <Frame />,
   },
+  { basename: "/preconceptual-schema/" }
 ]);
 
 
