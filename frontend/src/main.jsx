@@ -14,11 +14,11 @@ import Implication from './elements/Implication.jsx'
 import Additional from './Additional.jsx'
 import Frame from './elements/Frame.jsx'
 import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+  createHashRouter,
+  RouterProvider
+} from 'react-router-dom';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
