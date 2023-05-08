@@ -1,0 +1,155 @@
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: unset;
+  background-color: #131416;
+}
+
+.menu {
+  background-color: #1A1C1E;
+  height: 100%;
+  position: fixed;
+  color: white;
+  width: 20%;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.content {
+  background-color: #131416;
+  color: white;
+  position: absolute;
+  left: 20%;
+  height: 100%;
+  width: 80%;
+  overflow-y: scroll;
+  top: 0;
+  padding: 3%;
+  max-width: 74%;
+}
+
+#vl {
+  position: fixed;
+  left: 20%;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  background-color: #303335;
+}
+
+/* Menu */
+.menu-items {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+}
+
+#menu-title {
+  font-size: x-large;
+}
+
+#input-menu {
+  position: relative;
+  background-color: #1A1C1E;
+  border: none;
+  color: white;
+  border-bottom: 1px solid #303335;
+  border-top: 1px solid #303335;
+  outline: none;
+  font-size: medium;
+  background-image: url("search.png");
+  background-position: left center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  text-indent: 20px;
+  margin-bottom: 20%;
+}
+
+#input-menu:hover {
+  background-color: #131416;
+}
+
+#input-menu:active {
+  background-color: #131416;
+}
+
+#principal-elements {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#principal-elements li {
+  margin-bottom: 5%;
+  font-size: x-large;
+}
+
+#principal-elements a {
+  text-decoration: none;
+  color: #2B8CEE;
+}
+
+#principal-elements a:hover {
+  color: #2166ac;
+}
+
+
+#secondary-elements {
+  list-style-type: none;
+}
+
+#secondary-elements a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+
+#secondary-elements a:hover {
+  color: white;
+}
+
+/* Content */
+
+.context-text {
+  position: relative;
+  max-width: 90%;
+}
+
+.content a {
+  color: #2B8CEE;
+  text-decoration: none;
+}
+
+/* Error */
+
+.error {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.c-error {
+  margin-top: 10%;
+}
+
+#access {
+  font-size: 5em;
+  font-weight: 700;
+  color: #EE4B5E;
+}
+
+#sub {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1FA9D6;
+}
+
+#description {
+  font-size: 18px;
+  margin-right: 25%;
+  margin-left: 25%;
+  color: white;
+}
