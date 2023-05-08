@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Menu() {
     function openMenu() {
         const sideMenu = document.getElementsByClassName("menu")[0];
-        sideMenu.style.width = '230px';
+        sideMenu.style.width = '240px';
         const content = document.getElementsByClassName("content")[0];
         content.style.opacity = '0.5';
         const top = document.getElementsByClassName("top-menu")[0];
